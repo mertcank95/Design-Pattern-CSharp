@@ -1,0 +1,149 @@
+Adapter Patter:
+
+ Mevcut bir sınıfın arabirimini farklı bir arabirime dönüştürmek için kullanılan yapısal tasarım
+desenidir. Bu desen farklı arabirimlere sahip olan sınıfların birlikte çalışabilmesini sağlar.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Repository pattern:
+
+ Bu kalıp, veri kaynağına (veritabanı, dosya vb.) erişmek için kullanılan sınıfların oluşturulması ve yönetilmesinde yardımcı olur.
+Bu tasarım kalıbı, veri kaynağına erişmek için kullanılan işlemlerin (ekleme, silme, güncelleme vb.) 
+uygulamanın geri kalanından soyutlanmasını sağlar. Bu sayede, veri kaynağına erişimde herhangi bir değişiklik 
+yapmak istendiğinde, sadece Repository sınıfı değiştirilerek diğer kodlara etki etmeden bu değişiklik yapılabilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Abstract Factory Pattern:
+
+ Aynı aileye ait nesnelerin oluşturulmasını kolaylaştıran bir tasarım desenidir. Bu desen, sınıfların oluşturulmasından sorumlu olan 
+bir arayüz sağlar ve ardından bu arayüzü uygulayan birden fazla fabrika sınıfı tanımlar.
+
+ Bu fabrika sınıfları, belirli bir ailedeki nesneleri oluşturmak için kullanılır. Böylece, bir müşteri, farklı fabrikaların sağladığı 
+farklı nesneler arasında seçim yapabilir ve uygulamanın geri kalan kısmı, hangi fabrikanın kullanıldığına bakılmaksızın doğru şekilde 
+çalışmaya devam edebilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Observele patern:
+
+ Observer Pattern, bir nesne değiştiğinde onu izleyen ve otomatik olarak güncellenen bir grup nesneyi tutmak için kullanılan bir tasarım
+desenidir. Bu tasarım deseni, özellikle birçok nesne arasında değişikliklerin senkronize edilmesi gerektiğinde kullanışlıdır.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Bridge pattern : 
+
+ Bridge Pattern, bir nesnenin işlevselliğini ve uygulama ayrıntılarını ayırmak için kullanılan bir yapısal tasarım desenidir. Bu desen, 
+nesneler arasındaki sert bağımlılıkları kaldırmaya ve bu sayede kodun daha esnek, ölçeklenebilir ve kolayca değiştirilebilir hale gelmesine
+yardımcı olur.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Builder pattern : 
+
+ Bir sınıfın nesnelerinin oluşturulması işlemini basitleştirmek ve nesnelerin oluşturulması sırasında esneklik sağlamak için kullanılır.
+
+ Builder pattern, nesne oluşturma sürecini adım adım yürüten bir yapıya sahiptir. Bu süreçte, nesne özellikleri ve davranışları, önce bir
+Builder arayüzü tarafından belirlenir. Ardından, bu arayüzü uygulayan farklı sınıflar, farklı özelliklerle nesneleri oluştururlar.
+-------------------------------------------------------------------------------------------------------------------------------------------
+Prototype pattern : 
+
+ Bir nesnenin prototipini kullanarak yeni nesneler oluşturmak için kullanılan bir tasarım desenidir. Bu desen, nesne yaratma sürecini 
+basitleştirir ve nesne oluşturma işlemlerinin performansını artırır.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+proxy pattern : 
+
+ Bir nesne ile istemci arasına aracılık etmek için kullanılan bir tasarım desenidir. Bu tasarım deseni, istemci ile gerçek nesne arasındaki
+bağımlılığı azaltmak, gerçek nesne üzerindeki yükü azaltmak veya nesne oluşturma maliyetlerini azaltmak için kullanılabilir.
+
+ C# ile Proxy tasarım desenini uygulamak için, öncelikle bir arayüz veya soyut sınıf tanımlamanız gerekir. Bu arayüz veya soyut sınıf, 
+hem gerçek nesne hem de proxy nesne tarafından uygulanmalıdır. Ardından, gerçek nesne ve proxy sınıflarını uygulamalısınız.
+-------------------------------------------------------------------------------------------------------------------------------------------
+Strategy Patterns :
+
+ Bir nesnenin belirli bir işlevselliğinin değişebileceği durumlarda kullanılan bir tasarım desenidir. Bu desen, bir nesne için birden 
+fazla algoritma veya işlevsellik sağlamak istediğimiz durumlarda kullanılır. Bu şekilde, nesnenin işlevselliğini, çalışma zamanında
+dinamik olarak değiştirebiliriz.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Multiton pattern : 
+
+ Singleton Pattern'a benzer, ancak sınıfın birden fazla örneğinin yaratılmasına izin verir ve her örneği benzersiz bir anahtarla eşleştirir. 
+Bu anahtarlar, örneklere erişmek için kullanılabilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Facade pattern : 
+
+ Bir sistemdeki alt sistemlerin karmaşıklığını azaltmak için kullanılan bir yapısal tasarım desenidir.
+
+ Facade Pattern, bir alt sisteme erişimi basitleştirmek için tek bir arayüz sağlayan bir nesne oluşturur. Bu, alt sistemlerin daha düşük 
+seviyedeki ayrıntılarına girmek zorunda kalmadan, daha yüksek seviyeli işlevlerin kullanılmasını sağlar.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Composite pattern : 
+
+ Bir nesne yapısı tasarım desenidir ve bir bileşik nesne oluşturmak için kullanılır. Bu desen, bir nesnenin kendisini veya birçok alt
+nesneyi içerebileceği bir hiyerarşik yapı oluşturur. Bu nesne yapısı, hem tek bir nesne hem de birden fazla alt nesne içeren bileşik bir 
+nesne olarak davranabilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Decorator pattern : 
+
+ Bir nesneye dinamik olarak davranış eklemek için kullanılan yapısal bir tasarım desenidir. Bu desen, nesnenin işlevselliğini değiştirmeden, 
+onu daha fazla işlevsellik veya daha özel işlevsellikle genişletmeye olanak tanır.
+
+ Decorator pattern bir classa yeni bir özellik eklemez. Hali hazırda var olan bir sınıfın mevcut
+methodunun işlevini değiştirmek için vardır.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Memento pattern : 
+
+ Nesnelerin durumlarını kaydedip geri yüklemek için kullanılan bir yazılım tasarım desenidir. Bu desen, bir nesnenin durumunu 
+değiştirmeden önce ve sonra bu durumun bir anlık görüntüsünü (snapshot) kaydeder ve daha sonra ihtiyaç duyulduğunda bu görüntüyü geri 
+yükleyerek nesnenin önceki durumuna dönmesini sağlar.
+
+ Originator (Kaynak): Durumu kaydedilecek olan nesnedir.
+ Momento: Nesnenin durumunun kaydedildiği bir yapıdır.
+ Caretaker (Koruyucu): Momentoların saklandığı ve geri yüklendiği yapıdır.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+visitor pattern : 
+
+ Bir nesnenin içindeki verileri veya özellikleri dışarıya açmadan, başka bir nesne üzerinden bu verilere erişmek için kullanılan 
+bir tasarım desenidir. Bu tasarım deseni, nesne yapısını değiştirmeden, yeni işlevselliğin eklenmesine izin verir.
+
+ Bu desen, bir nesnenin içindeki verilere erişmek için bir ziyaretçi sınıfı kullanır. Bu ziyaretçi sınıfı, nesnenin özelliklerine erişebilir
+ve bu özellikleri kullanarak belirli bir işlevi gerçekleştirebilir. Bu desenin kullanımı, nesne yapısını değiştirmeden, yeni işlevsellikler 
+ekleyebilir ve kod tekrarını azaltabilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Template Method Pattern : 
+
+ Template Method Pattern (Şablon Metodu Tasarım Deseni), bir nesne yönelimli programlama tasarım desenidir ve davranışsal bir desendir. 
+Bu desen, bir işlemin belirli adımlarının algoritmik bir şablonunu tanımlar ve bu adımların bazılarının alt sınıflar tarafından uygulanmasına 
+izin verir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Null Object Pattern : 
+
+ Bir nesnenin null olması durumunda ortaya çıkan sorunları çözmek için kullanılan bir tasarım desenidir. Bu desen, bir nesnenin null olması 
+durumunda, bu nesnenin yerine null olmayan bir nesne döndürerek uygulamada olası hataların önüne geçmeyi amaçlar.
+Bu pattern kullanılmazsa if(x != null) gibi kontroller yapılmak zorunda kalır.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Chain of responsibility pattern :
+
+ Chain of Responsibility (Sorumluluk Zinciri) tasarım deseni, bir isteği işlemek için bir dizi nesne zincirinin oluşturulmasını sağlar. 
+Her bir nesne, isteği işleyebileceği durumlarda, kendisine verilen isteği işler ve zincirin sonuna kadar işlemesi gerekiyorsa,
+isteği bir sonraki nesneye aktarır.
+
+ Bu desen, bir işlemin hangi nesnenin işleyebileceği belirsiz olduğunda ve birden fazla nesnenin bu işlemi işleyebileceği durumlarda
+kullanışlıdır. Zincirin sonundaki nesne, isteği işleyemediğinde ya da zincirde hiçbir nesne isteği işleyemezse, bir hata işleyebilir 
+ya da boş bir cevap gönderebilir.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+State pattern : 
+
+ Nesne durumlarına göre davranışlarını değiştirmesi gereken bir nesnenin durumlarına göre farklı davranışlar sergilemesine olanak tanıyan
+bir yazılım tasarım desenidir. Bu tasarım deseni, bir nesnenin durumlarına bağlı olarak, farklı davranışlar sergilemesi gerektiği durumlarda
+kullanılır. State Pattern, nesne yönelimli programlama (OOP) prensipleriyle uyumludur ve durumları ayırmak ve davranışları
+uygun şekilde yönetmek için kullanılır.
+
+ 
